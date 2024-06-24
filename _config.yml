@@ -30,3 +30,4 @@ defaults:
     values:
       layout: "post"
       comments: true
+  
