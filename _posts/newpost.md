@@ -4,11 +4,11 @@ title: "Amazing Italian Restaurant"
 date: 2023-06-24
 cuisine: Italian
 city: Rome
-image: /assets/images/amazing-italian-restaurant.jpg
+image: /assets/images/image.jpg
 tags: [pasta, pizza, fine dining]
 ---
 
-![Restaurant Image](/assets/images/amazing-italian-restaurant.jpg)
+![Restaurant Image](/assets/images/image.jpg)
 
 Description of the restaurant and your experience.
 

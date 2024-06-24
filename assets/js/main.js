@@ -8,14 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('nav ul').classList.toggle('show');
   });
 
-  // Handle dropdown clicks on mobile
-  const dropdowns = document.querySelectorAll('.dropdown');
+  // Handle dropdown clicks
+  const dropdowns = document.querySelectorAll('.dropdown > a');
   dropdowns.forEach(dropdown => {
     dropdown.addEventListener('click', function(e) {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        this.querySelector('.dropdown-content').classList.toggle('show');
-      }
+      e.preventDefault();
+      const dropdownContent = this.nextElementSibling;
+      dropdownContent.classList.toggle('show');
     });
   });
 });
