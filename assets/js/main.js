@@ -1,20 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.createElement('button');
-  menuToggle.innerHTML = '☰';
-  menuToggle.className = 'menu-toggle';
-  document.querySelector('nav').prepend(menuToggle);
+  const menuToggle = document.querySelector('.menu-toggle');
+  const siteNav = document.querySelector('.site-nav');
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
   menuToggle.addEventListener('click', function() {
-    document.querySelector('nav ul').classList.toggle('show');
+    siteNav.classList.toggle('active');
   });
 
-  // Handle dropdown clicks
-  const dropdowns = document.querySelectorAll('.dropdown > a');
-  dropdowns.forEach(dropdown => {
-    dropdown.addEventListener('click', function(e) {
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
       e.preventDefault();
-      const dropdownContent = this.nextElementSibling;
-      dropdownContent.classList.toggle('show');
+      this.parentElement.classList.toggle('active');
     });
   });
 });

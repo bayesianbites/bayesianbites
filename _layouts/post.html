@@ -10,15 +10,23 @@ layout: default
       <span class="city">{{ page.city }}</span>
     </p>
   </header>
+  
+  {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-image">
+  {% endif %}
+  
   <div class="post-content">
     {{ content }}
   </div>
-  <div class="post-tags">
-    <h3>Tags:</h3>
-    <ul>
-      {% for tag in page.tags %}
-      <li>{{ tag }}</li>
-      {% endfor %}
-    </ul>
-  </div>
+  
+  {% if page.tags.size > 0 %}
+    <div class="post-tags">
+      <h3>Tags:</h3>
+      <ul>
+        {% for tag in page.tags %}
+        <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
 </article>

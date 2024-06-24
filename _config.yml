@@ -3,7 +3,6 @@ description: Discovering culinary delights around the world
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yourusername.github.io" # replace with your GitHub username
 
-# Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
@@ -11,20 +10,17 @@ sass:
   sass_dir: _sass
   style: compressed
 
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Collections
 collections:
   cuisines:
     output: true
   cities:
     output: true
 
-# Defaults
 defaults:
   - scope:
       path: ""

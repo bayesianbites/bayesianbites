@@ -1,22 +1,27 @@
-<nav>
-  <ul>
+<nav class="site-nav">
+  <button class="menu-toggle" aria-label="Toggle Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-list">
     <li><a href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a href="{{ '/pages/about/' | relative_url }}">About</a></li>
+    <li><a href="{{ '/about/' | relative_url }}">About</a></li>
     <li class="dropdown">
-      <a href="{{ '/pages/cuisines/' | relative_url }}">Cuisines</a>
-      <div class="dropdown-content">
+      <a href="#" class="dropdown-toggle">Cuisines</a>
+      <ul class="dropdown-menu">
         {% for cuisine in site.cuisines %}
-          <a href="{{ cuisine.url | relative_url }}">{{ cuisine.title }}</a>
+          <li><a href="{{ cuisine.url | relative_url }}">{{ cuisine.title }}</a></li>
         {% endfor %}
-      </div>
+      </ul>
     </li>
     <li class="dropdown">
-      <a href="{{ '/pages/cities/' | relative_url }}">Cities</a>
-      <div class="dropdown-content">
+      <a href="#" class="dropdown-toggle">Cities</a>
+      <ul class="dropdown-menu">
         {% for city in site.cities %}
-          <a href="{{ city.url | relative_url }}">{{ city.title }}</a>
+          <li><a href="{{ city.url | relative_url }}">{{ city.title }}</a></li>
         {% endfor %}
-      </div>
+      </ul>
     </li>
   </ul>
 </nav>

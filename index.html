@@ -2,6 +2,7 @@
 layout: default
 title: Home
 ---
+
 <section class="hero">
   <h1>{{ site.title }}</h1>
   <p>{{ site.description }}</p>
@@ -9,16 +10,19 @@ title: Home
 
 <section class="featured-posts">
   <h2>Latest Reviews</h2>
-  <div class="grid">
+  <div class="post-grid">
     {% for post in site.posts limit:6 %}
-    <div class="card">
-      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-      <div class="card-content">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        <a href="{{ post.url | relative_url }}" class="btn">Read More</a>
-      </div>
-    </div>
+      <article class="post-card">
+        {% if post.image %}
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
+        {% endif %}
+        <div class="post-content">
+          <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="post-meta">{{ post.date | date: "%B %d, %Y" }} | {{ post.cuisine }} | {{ post.city }}</p>
+          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          <a href="{{ post.url | relative_url }}" class="btn">Read More</a>
+        </div>
+      </article>
     {% endfor %}
   </div>
 </section>
