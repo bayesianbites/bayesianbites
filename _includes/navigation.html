@@ -1,6 +1,22 @@
 <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/pages/about' | relative_url }}">About</a>
-    <a href="{{ '/pages/cuisines' | relative_url }}">Cuisines</a>
-    <a href="{{ '/pages/cities' | relative_url }}">Cities</a>
-  </nav>
+  <ul>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/pages/about' | relative_url }}">About</a></li>
+    <li class="dropdown">
+      <a href="{{ '/pages/cuisines' | relative_url }}">Cuisines</a>
+      <div class="dropdown-content">
+        {% for cuisine in site.cuisines %}
+          <a href="{{ cuisine.url }}">{{ cuisine.title }}</a>
+        {% endfor %}
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="{{ '/pages/cities' | relative_url }}">Cities</a>
+      <div class="dropdown-content">
+        {% for city in site.cities %}
+          <a href="{{ city.url }}">{{ city.title }}</a>
+        {% endfor %}
+      </div>
+    </li>
+  </ul>
+</nav>
