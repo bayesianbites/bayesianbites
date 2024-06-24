@@ -1,56 +1,62 @@
-<h1 align=center>Revolve Jekyll </h1>
+![preview Long Haul](/preview.jpg)
 
-<p align=center>Revolve Jekyll Blog Template ported from [Revolve HTML Template](https://themefisher.com/products/revolve/)</p>
+Long Haul is a minimal jekyll theme built with SASS and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
 
-<h2 align="center"> <a target="_blank" href="https://demo.themefisher.com/thumbnails/revolve-jekyll/" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.themefisher.com%2Frevolve-jekyll%2F&form_factor=desktop">Page Speed (89%)</a> </h2>
+If you really enjoy Long Haul and want to give me credit somewhere on the internet send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaierjr).
 
+#### [View Demo](http://brianmaierjr.com/long-haul)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd29f13b-3754-46d7-9a39-48db2e174b99/deploy-status)](https://app.netlify.com/sites/long-haul/deploys)
 
-[Live Preview](http://demo.themefisher.com/revolve-jekyll/).
+## Features
+
+-   Minimal, Type Focused Design
+-   Built with SASS
+-   SVG Social Icons
+-   Responsive Nav Menu
+-   XML Feed for RSS Readers
+-   Contact Form via Formspree
+-   5 Post Loop with excerpt on Home Page
+-   Previous / Next Post Navigation
+-   Estimated Reading Time for posts
+-   Stylish Drop Cap on posts
+-   A Better Type Scale for all devices
+-   Comments powered by Disqus
+-   [Dark Mode support](https://github.com/brianmaierjr/long-haul/blob/master/preview-dark.png) via [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
 
 ## Setup
 
-To start your project, fork this repository
-After forking the repo, your site will be live immediately on your personal Github Pages account, e.g. `https://yourusername.github.io/your-repo-name/`.
+1. [Install Jekyll](http://jekyllrb.com)
+2. Fork the [Long Haul repo](http://github.com/brianmaierjr/long-haul)
+3. Clone it
+4. [Install Bundler](http://bundler.io/)
+5. Run `bundle install`
+6. Run Jekyll Serve and Watch command`bundle exec jekyll serve -w`
 
-Make sure GitHub Pages is enabled for your repo. It might take some time for the site to propagate entirely.
+## Site Settings
 
-## Customize
+The main settings can be found inside the `_config.yml` file:
 
-Things you can customize in `_data/settings.yml` (no HTML/CSS):
+-   **title:** title of your site
+-   **description:** description of your site
+-   **url:** your url
+-   **paginate:** the amount of posts displayed on homepage
+-   **navigation:** these are the links in the main site navigation
+-   **social** diverse social media usernames (optional)
+-   **google_analytics** Google Analytics key (optional)
 
-- Theme General Settings ( name, logo, email, phone, address )
-- Hero Section
-- About Section
-- Team Section
-- Skills Section
-- Experience Section
-- Education Section
-- Services Section
-- Portfolio Section
-- Testimonials Section
-- Client Slider Section
-- Contact Section
+### Header Option
 
-## Deployment
+If you'd like your header to be larger then you can use the option below in you `config.yml` to make it take up half of the vertical space on screens 800px wide and up. _Preview image below._
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll's website.
+-   **header:** large
 
-## Reporting Issues
+![preview Long Haul](/preview-large.png)
 
-We use GitHub Issues as the official bug tracker for the **Kross Theme**. Please Search [existing issues](https://github.com/themefisher/revolve-jekyll/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/revolve-jekyll/issues/new)
+## To use on GitHub Pages
 
-## Technical Support or Questions
+To use latest Jekyll and Jekyll Sass Converter on GitHub Pages, <a href="https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/">you can now deploy to a GitHub Pages site using GitHub Actions.</a>
 
-If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.
-
-<!-- licence -->
 ## License
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
-
-**Code License:** Released under the [MIT](https://github.com/themefisher/revolve-jekyll/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.

@@ -1,9 +1,8 @@
-source "https://rubygems.org"
-gem 'bundler'
-gem 'jekyll'
-gem "jekyll-feed", "~> 0.12"
-gem "jekyll-paginate-v2"
-gem 'jekyll-tagging'
-gem 'jekyll-archives'
-gem 'wdm', '>= 0.1.1'
+source 'https://rubygems.org'
+
+gem "jekyll"
+gem "jekyll-paginate"
+gem "support-for"
+gem "http_parser"
 gem "webrick", "~> 1.7"
+ 
