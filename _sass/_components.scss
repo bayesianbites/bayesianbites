@@ -29,3 +29,24 @@
     padding: 20px;
   }
 }
+
+.post-meta {
+  font-size: 0.9em;
+  color: lighten($text-color, 20%);
+}
+
+.post-tags {
+  margin-top: 2rem;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      background-color: $accent-color;
+      padding: 5px 10px;
+      border-radius: 3px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

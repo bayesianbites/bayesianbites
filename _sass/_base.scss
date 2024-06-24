@@ -1,14 +1,23 @@
 body {
-    font-family: $font-family;
-    color: $text-color;
-    background-color: $background-color;
-    line-height: 1.6;
+  font-family: $font-family;
+  color: $text-color;
+  background-color: $background-color;
+  line-height: 1.6;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    color: darken($primary-color, 20%);
   }
-  
-  a {
-    color: $primary-color;
-    text-decoration: none;
-    &:hover {
-      color: darken($primary-color, 10%);
-    }
-  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,10 +1,12 @@
 title: Gourmet Explorer
 description: Discovering culinary delights around the world
-url: "https://yourusername.github.io"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # replace with your GitHub username
 
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
+
 sass:
   sass_dir: _sass
   style: compressed
@@ -30,4 +32,3 @@ defaults:
     values:
       layout: "post"
       comments: true
-  

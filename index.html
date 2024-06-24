@@ -12,11 +12,11 @@ title: Home
   <div class="grid">
     {% for post in site.posts limit:6 %}
     <div class="card">
-      <img src="{{ post.image }}" alt="{{ post.title }}">
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
       <div class="card-content">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        <a href="{{ post.url }}" class="btn">Read More</a>
+        <a href="{{ post.url | relative_url }}" class="btn">Read More</a>
       </div>
     </div>
     {% endfor %}
