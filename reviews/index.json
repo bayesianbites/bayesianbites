@@ -1,0 +1,24 @@
+[
+    {
+      "id": "review1",
+      "title": "Exquisite Dining at Le Petit Château",
+      "date": "2024-06-24",
+      "author": "Jane Doe",
+      "rating": 4.5,
+      "cuisine": "French",
+      "city": "Paris",
+      "tags": ["Fine Dining", "Romantic"],
+      "image": "food-background.jpg"
+    },
+    {
+      "id": "review2",
+      "title": "Authentic Sushi Experience at Sakura",
+      "date": "2024-06-20",
+      "author": "John Smith",
+      "rating": 5,
+      "cuisine": "Japanese",
+      "city": "Tokyo",
+      "tags": ["Sushi", "Traditional"],
+      "image": "food-background.jpg"
+    }
+  ]

@@ -1,28 +1,52 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Chronicles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bayesian Bites</div>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Cuisines</a>
+                    <div class="dropdown-content" id="cuisine-dropdown"></div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Cities</a>
+                    <div class="dropdown-content" id="city-dropdown"></div>
+                </li>
+                <li><a href="#about-section">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-  <h1>{{ site.title }}</h1>
-  <p>{{ site.description }}</p>
-</section>
+    <main>
+        <section id="landing-content">
+            <div class="hero">
+                <h1>Bayesian Bites : Where Every Dish Comes with a side of Confidence Interval</h1>
+                 
+            </div>
 
-<section class="featured-posts">
-  <h2>Latest Reviews</h2>
-  <div class="post-grid">
-    {% for post in site.posts limit:6 %}
-      <article class="post-card">
-        {% if post.image %}
-          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
-        {% endif %}
-        <div class="post-content">
-          <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          <p class="post-meta">{{ post.date | date: "%B %d, %Y" }} | {{ post.cuisine }} | {{ post.city }}</p>
-          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-          <a href="{{ post.url | relative_url }}" class="btn">Read More</a>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-</section>
+            <section id="about-section">
+                <h2>About</h2>
+                <p>On a personal quest to discover my top 100 dishes that statistically merit another indulgence before my time is up. sharing this culinary journey through reviews for those who share a similar food palate.</p>
+            </section>
+        </section>
+
+        <section id="reviews-container"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bayesian Bites. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
