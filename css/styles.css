@@ -3,7 +3,7 @@
     --secondary-color: #616161;
     --accent-color: #a25964;
     --text-color: #f0f0f0;
-    --background-color: #263238;
+    --background-color: #01141e;
     --card-background: #37474f;
     --header-background: #600535;
 }
@@ -249,7 +249,7 @@ main {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/food-background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/food-background.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -259,6 +259,7 @@ main {
     align-items: center;
     text-align: center;
     color: var(--text-color);
+    /* filter: brightness(1.2) */
 }
 
 .hero h1 {
