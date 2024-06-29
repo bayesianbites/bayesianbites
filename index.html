@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Culinary Chronicles</title>
+    <title>Bayesian Bites</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,6 +11,11 @@
     <header>
         <nav>
             <div class="logo">Bayesian Bites</div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search restaurants...">
+                <button id="search-button">Search</button>
+            </div>
+            <button class="menu-toggle">☰</button>
             <ul>
                 <li><a href="#" id="home-link">Home</a></li>
                 <li class="dropdown">
@@ -22,30 +27,25 @@
                     <div class="dropdown-content" id="city-dropdown"></div>
                 </li>
                 <li><a href="#about-section">About</a></li>
+                <li><a href="#" id="contact-button">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section id="landing-content">
             <div class="hero">
-                <h1>Bayesian Bites : Where Every Dish Comes with a side of Confidence Interval</h1>
-                 
+                <h1>Bayesian Bites: Where Every Dish Comes with a Side of Confidence Interval</h1>
             </div>
-
             <section id="about-section">
                 <h2>About</h2>
-                <p>On a personal quest to discover my top 100 dishes that statistically merit another indulgence before my time is up. sharing this culinary journey through reviews for those who share a similar food palate.</p>
+                <p>On a personal quest to discover my top 100 dishes that statistically merit another indulgence before my time is up. Sharing this culinary journey through reviews for those who share a similar food palate.</p>
             </section>
         </section>
-
         <section id="reviews-container"></section>
     </main>
-
     <footer>
         <p>&copy; 2024 Bayesian Bites. All rights reserved.</p>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
     <script src="js/main.js"></script>
 </body>

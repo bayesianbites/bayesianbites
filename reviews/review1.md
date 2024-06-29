@@ -1,4 +1,16 @@
 
+
+---
+title: Petit Château
+date: 2024-06-24
+author: Jane Doe
+rating: 4.5
+cuisine: Chineese
+city: Buffalo
+tags: [Fine Dining, Romantic]
+image: le-petit-chateau.jpg
+---
+
 Nestled in the heart of Paris, Le Petit Château offers a dining experience that is nothing short of magical. From the moment you step through its ornate doors, you are transported to a world of culinary excellence and unparalleled ambiance.
 
 ## The Atmosphere
@@ -20,3 +32,6 @@ While Le Petit Château comes with a hefty price tag, the experience justifies t
 ![Image Description 1](images/food-background.jpg)
 ![Image Description 2](images/food-background.jpg)
 ![Image Description 3](images/food-background.jpg)
+![Image Description 4](images/food-background.jpg)
+![Image Description 5](images/food-background.jpg)
+![Image Description 6](images/food-background.jpg)

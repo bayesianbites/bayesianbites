@@ -26,3 +26,10 @@ The staff at Le Petit Château are consummate professionals, attentive without b
 ## Final Thoughts
 
 While Le Petit Château comes with a hefty price tag, the experience justifies the cost. It's not just a meal; it's a journey through the best that French cuisine has to offer. Whether you're a food enthusiast or simply looking for a memorable dining experience in Paris, Le Petit Château should be at the top of your list.
+
+![Image Description 1](images/food-background.jpg)
+![Image Description 2](images/food-background.jpg)
+![Image Description 3](images/food-background.jpg)
+![Image Description 4](images/food-background.jpg)
+![Image Description 5](images/food-background.jpg)
+![Image Description 6](images/food-background.jpg)

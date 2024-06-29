@@ -8,6 +8,7 @@
       "cuisine": "French",
       "city": "Paris",
       "tags": ["Fine Dining", "Romantic"],
+      "restaurant": "Le Petit",
       "image": "food-background.jpg"
     },
     {
@@ -19,6 +20,7 @@
       "cuisine": "Japanese",
       "city": "Tokyo",
       "tags": ["Sushi", "Traditional"],
+      "restaurant": "Sushi Palace",
       "image": "food-background.jpg"
     }
   ]
